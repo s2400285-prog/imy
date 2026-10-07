@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Julie ♡ | My Love Story</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- MUSIC -->
+    <audio id="bgMusic" loop autoplay>
+      <source src="music.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- MUSIC BUTTON -->
+    <button class="music-btn" id="musicBtn">♫</button>
+
+    <!-- FLOATING HEARTS -->
+    <div class="hearts"></div>
+
+    <main class="page">
+      <!-- TOP HEART -->
+      <div class="top-heart">♥</div>
+
+      <!-- NAVIGATION -->
+      <nav>
+        <div class="menu">☰</div>
+
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#letter">My Letter ♡</a>
+          <a href="#verse">Bible Verse</a>
+          <a href="#question">Us</a>
+        </div>
+
+        <div class="nav-icons">
+          <span>♡</span>
+          <span>♡</span>
+          <button onclick="showLove()">Love</button>
+        </div>
+      </nav>
+
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="flowers flower-left">🌸</div>
+        <div class="flowers flower-right">🌸</div>
+
+        <div class="sparkle s1">✦</div>
+        <div class="sparkle s2">✦</div>
+        <div class="sparkle s3">✧</div>
+        <div class="sparkle s4">✦</div>
+
+        <div class="flower-circle">🌸 🌼 🌸</div>
+
+        <h1>
+          Our Little<br />
+          <span>Love Story</span>
+        </h1>
+
+        <p class="subtitle">
+          A little message from my heart<br />
+          to the girl I can't stop thinking about.
+        </p>
+
+        <button class="start-btn" onclick="openLetter()">
+          OPEN MY HEART ♡
+        </button>
+      </section>
+
+      <!-- LETTER -->
+      <section class="letter-section hidden" id="letter">
+        <div class="letter-card">
+          <div class="letter-decoration">♡</div>
+
+          <h2>Dear Julie,</h2>
+
+          <p>
+            I honestly don't know how to explain what has been happening inside
+            my heart lately.
+          </p>
+
+          <p>
+            Ever since our date, I keep thinking about you. I remember the
+            little moments, the conversations, your smile, and the way being
+            with you made everything feel a little more special.
+          </p>
+
+          <p>
+            And now that I'm here writing this message, I realized something...
+          </p>
+
+          <p class="highlight">I think I'm falling for you. Hard. ♡</p>
+
+          <p>
+            I miss you more than I expected. Sometimes I'm just doing something
+            completely normal, then suddenly my mind goes back to you.
+          </p>
+
+          <p>
+            I find myself wanting to talk to you, wanting to know how your day
+            went, wanting to hear your stories, wanting to make you laugh, and
+            wanting to be there whenever you need someone.
+          </p>
+
+          <p>
+            And honestly, Julie... I want to tell you that I love you every day.
+          </p>
+
+          <p>
+            Not because I expect anything from you, but because that's simply
+            what my heart feels.
+          </p>
+
+          <p>
+            I love the way you make ordinary moments feel special. I love your
+            presence. I love your smile. I love the little things about you that
+            you probably don't even realize I notice.
+          </p>
+
+          <p>
+            I know we're still writing our story, and I don't want to rush
+            anything. I just want to enjoy every chapter with you, one day at a
+            time.
+          </p>
+
+          <p class="big-love">I miss you, Julie. ♡</p>
+
+          <p>
+            And if my heart could speak for itself, it would probably say your
+            name all day.
+          </p>
+
+          <p>
+            Thank you for giving me memories that I keep replaying in my head
+            and a reason to smile at my phone.
+          </p>
+
+          <p>
+            Whatever happens next, I hope you know that there is someone here
+            who genuinely cares about you, prays for you, supports you, and
+            wants to see you happy.
+          </p>
+
+          <p>And yes... that someone is me. ♡</p>
+
+          <div class="signature">
+            Always thinking of you,<br />
+            <span>James ♡</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- BUTTONS -->
+      <section class="buttons-section">
+        <h2>Little Things I Want To Tell You ♡</h2>
+
+        <div class="button-grid">
+          <button onclick="showMessage(1)">💗 Why I Miss You</button>
+
+          <button onclick="showMessage(2)">🌸 What I Love About You</button>
+
+          <button onclick="showMessage(3)">🥺 What My Heart Says</button>
+
+          <button onclick="showMessage(4)">💌 One More Thing</button>
+        </div>
+
+        <div id="messageBox" class="message-box">
+          Click one of the buttons above ♡
+        </div>
+      </section>
+
+      <!-- BIBLE VERSE -->
+      <section class="verse-section" id="verse">
+        <div class="verse-card">
+          <div class="cross">✝</div>
+
+          <h2>A Little Verse For You</h2>
+
+          <p class="verse">
+            “Above all, love each other deeply, because love covers over a
+            multitude of sins.”
+          </p>
+
+          <span class="reference"> — 1 Peter 4:8 </span>
+
+          <p class="verse-message">
+            I hope whatever happens between us, we always keep God at the center
+            of our story.
+          </p>
+        </div>
+      </section>
+
+      <!-- QUESTIONS -->
+      <section class="question-section" id="question">
+        <h2>Can I Ask You Something? ♡</h2>
+
+        <p>Be honest with your heart...</p>
+
+        <div class="question-buttons">
+          <button onclick="yesAnswer()">Yes ♡</button>
+
+          <button onclick="maybeAnswer()">Maybe? 🌸</button>
+        </div>
+
+        <div id="answer"></div>
+      </section>
+
+      <!-- FINAL -->
+      <section class="final-section">
+        <div class="final-heart">♥</div>
+
+        <h2>Until I See You Again...</h2>
+
+        <p>
+          I'll probably still be here, thinking about you, missing you, and
+          smiling because you became one of the sweetest parts of my days.
+        </p>
+
+        <h1>I Love You, Julie. ♡</h1>
+
+        <span> More than this little webpage could ever explain. </span>
+      </section>
+    </main>
+
+    <footer>Made with love ♡ for Julie</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
